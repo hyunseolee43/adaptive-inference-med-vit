@@ -613,7 +613,7 @@
       Vision Transformers are powerful but computationally expensive for clinical deployment.
       We propose a <strong>unified adaptive inference framework</strong> that combines
       <strong>Token Reduction (TR)</strong> and <strong>Early Exiting (EE)</strong> through
-      dataset-specific profiling — using Jensen-Shannon Divergence to quantify spatial
+      dataset-specific profiling, using Jensen-Shannon Divergence to quantify spatial
       redundancy and a lightweight CNN predictor to select inference strategy per sample.
       Across <strong>five diverse medical imaging datasets</strong>, our method achieves
       <strong>71.4% average FLOPs reduction</strong> with only
@@ -632,7 +632,7 @@
   <h2>Why Adaptive Inference for Medical Vision Transformers?</h2>
 
   <p>
-    Vision Transformers (ViTs) have achieved state-of-the-art results across medical imaging tasks —
+    Vision Transformers (ViTs) have achieved state-of-the-art results across medical imaging tasks such as
     dermatological lesion classification, chest X-ray diagnosis, histopathological analysis, and ophthalmic imaging.
     Yet their <strong>high computational cost</strong> creates critical barriers for clinical deployment:
   </p>
@@ -658,7 +658,7 @@
   <p>
     Two prominent efficiency strategies exist: <strong>Token Reduction (TR)</strong> prunes spatially redundant patches,
     and <strong>Early Exiting (EE)</strong> terminates inference when prediction confidence is sufficient.
-    Prior work treats these in isolation. We ask: <em>which strategy is right for which dataset — and which sample?</em>
+    Prior work treats these in isolation. We ask: <em>which strategy is right for which dataset and for which sample?</em>
   </p>
 
   <p>
